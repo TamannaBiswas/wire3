@@ -1,0 +1,851 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Baloo Da 2";
+  font-family: "Hind Siligur";
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+.btn:focus {
+  box-shadow: none;
+}
+
+/*==========================================
+              variable define
+ =========================================== */
+:root {
+  --primary-color: #3c8224;
+  --secondry-color: #43121d;
+  --third-color: #8e9298;
+  --whit-color: #f2f7f2;
+  --text-color: #555;
+  --black-color: #000;
+  --primary-font: "roboto", sans-serif;
+  --secondry-font: "Quicksand", sans-serif;
+}
+
+/*ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+                         1.   HEADER SCC 
+   ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+.Categories {
+  font-family: "Baloo Da 2";
+  color: var(--primary-color) !important;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  padding: 16px;
+  border: none;
+}
+.Search {
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  color: var(--third-color);
+  border: none;
+}
+.Search:focus {
+  outline-style: none;
+}
+select {
+  font-family: "Baloo Da 2";
+  color: var(--third-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  border: none;
+}
+select:focus {
+  outline-style: none;
+}
+.mainbtn {
+  background: var(--primary-color);
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  color: var(--whit-color);
+  border-radius: 12px;
+  padding: 9px;
+  border: none;
+}
+.mainbtn:hover {
+  color: var(--whit-color);
+}
+/*ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+                         2.  কোডার্স ট্রাস্ট SECTION
+   ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+/* part 1 ROW */
+.section2 .manuh1 {
+  font-family: "Hind Siliguri";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 70px;
+  color: #1d4354;
+}
+
+.section2 .manu ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  text-align: center;
+}
+.section2 .manu ul li a {
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #696e76;
+  transition: 0.3s all;
+}
+.section2 .manu ul li a:hover {
+  color: #3c8224;
+}
+.hover-line::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #3c8224;
+  transition: width 0.3s;
+  display: none;
+}
+.hover-line:hover::after {
+  background-color: #3c8224;
+  width: 100%;
+  transition: width 0.3s;
+  display: block;
+}
+/* part 2 ROW */
+.cl-1 {
+  margin: 0 10px;
+  box-sizing: border-box;
+}
+.cl-1.item img {
+  border-radius: 10px 10px 0 0;
+}
+.itemp {
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 15px;
+  color: #434a54;
+}
+.itembtn1 {
+  padding: 0;
+  margin: 0;
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 30px;
+  color: #434a54;
+}
+.itemspan {
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #3c8224;
+}
+.itembtn2 {
+  padding: 3px 4px;
+  width: 120px;
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: #434a54;
+  border-color: var(--primary-color);
+  border-radius: 5px;
+  border: 1px solid #3c8224;
+}
+
+.item:hover .itemp {
+  color: #3c8224;
+}
+.item:hover .itembtn2 {
+  background-color: #3c8224;
+  color: #fff;
+}
+
+.cl-1.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #3c8224;
+  width: 14px;
+  height: 14px;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 14px;
+  height: 14px;
+  margin: 5px 7px;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 40px;
+}
+/*ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+                        3.   আমাদের সম্পর্কে জেনে নাও CSS
+   ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+.SECTION3 {
+  background: #f2f7f2;
+}
+.video-box img {
+  width: 90%;
+  height: 400px;
+}
+.right-img {
+  position: relative;
+}
+
+.dark-overla {
+  background: rgba(13, 56, 18, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.searche .video-box {
+  position: relative;
+}
+.video-part {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-degin i {
+  font-size: 4rem;
+  color: #f2f7f2;
+}
+.border-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4rem;
+  height: 4rem;
+  border: 00.55rem solid #fff;
+  border-radius: 50%;
+  animation: pulse-border 1.5s linear infinite;
+}
+.border-animation .boder-1 {
+  animation-delay: 1s;
+}
+.border-animation .boder-2 {
+  animation-delay: 1.5s;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+/* 2 content-tart the content for the কোডার্স ট্রাস্ট  */
+.contenh {
+  font-family: "Hind Siliguri";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 123%;
+  color: #1d4354;
+}
+.contenp {
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  color: #696e76;
+}
+.mainbtn1 {
+  padding: 12px 30px !important;
+  background: #14a800;
+  border-radius: 12px;
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  color: #fdfdfd;
+}
+/*ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+                         4-SECTION / জনপ্রিয় কোর্সসমূহ CSS
+   ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+.section4 .align-center {
+  width: 85%;
+  text-align: center;
+}
+.centerp {
+  font-family: "Hind Siliguri";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 133%;
+  color: #1d4354;
+}
+.pcenter {
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #434a54;
+}
+.teknologyspan {
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  color: #14a800;
+}
+
+.tack {
+  position: relative;
+}
+
+.tack .slick-prev::before {
+  color: #000;
+  font-size: 25px;
+}
+.tack .slick-next::before {
+  color: #000;
+  font-size: 25px;
+}
+
+.tack .slick-next {
+  top: 66%;
+  right: -12px;
+}
+.tack .slick-prev {
+  top: 66%;
+  left: -12px;
+}
+/*ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZzzzzzzzzzzzzzz
+                         5-SECTION / কোডার্স ট্রাস্ট থেকে কেন কোর্স করবেন CSS
+                  ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+
+.section5 {
+  background: #f2f7f2;
+}
+.toph {
+  font-family: "Hind Siliguri";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 133%;
+  color: #1d4354;
+}
+.topp {
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #696e76;
+  margin-bottom: 0;
+}
+.cardsh3 {
+  font-family: "Hind Siliguri";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 36px;
+  color: #434a54;
+  text-align: justify;
+}
+.cardsp {
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 154.3%;
+  color: #696e76;
+  margin-bottom: 0;
+  text-align: justify;
+}
+/*ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+                         7-SECTION / ইন্ডাস্ট্রি এক্সপার্টস CSS
+   ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+.sevenh2 {
+  font-family: "Hind Siliguri";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 133%;
+  color: #1d4354;
+}
+.sevenp {
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #696e76;
+}
+
+.section7-2 .card .image {
+  height: 200px;
+  width: 200px;
+  padding: 3px;
+}
+.section7-2 .card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.section7-2 .card {
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.section7-2 .card .card-content {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  flex-direction: column;
+}
+.indersth3 {
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #434a54;
+  text-align: center;
+  margin-top: 20px;
+}
+.inderstp {
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #8e9298;
+  text-align: center;
+}
+.section7-2 .slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+  color: #1d4354;
+}
+.section7-2 .slick-prev {
+  position: absolute;
+  top: 55%;
+  width: 50px;
+  height: 50px;
+  font-weight: 400;
+}
+.section7-2 .slick-next {
+  position: absolute;
+  top: 55%;
+  width: 50px;
+  height: 50px;
+}
+.section7-2 .slick-next {
+  right: -20px;
+}
+.section7-2 .slick-prev {
+  left: -20px;
+  z-index: 100;
+}
+/*ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+                         8-SECTION / Become an Instructor CSS
+   ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+.section-8 {
+  background: #eceef1;
+  border: 5.4803px solid #ffffff;
+}
+.Becomeh3 {
+  font-family: "Hind Siliguri";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 133%;
+  color: #1d4354;
+}
+.Becomep {
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #696e76;
+}
+.mainbtn2 {
+  padding: 12px 40px !important;
+  background: #14a800;
+  border-radius: 12px;
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  color: #fdfdfd;
+}
+/*ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+                         9-SECTION / শিক্ষার্থীরা যা বলেছেন CSS
+   ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+.techingh3 {
+  font-family: "Hind Siliguri";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 133%;
+  color: #1d4354;
+}
+
+.section-9 .card .image-area .img {
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+}
+.section-9 .card .image-area img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.section-9 .card {
+  width: 400px;
+  height: 300px;
+  background: #fff;
+  border-radius: 10px;
+}
+.section-9 .card .botom-img {
+  padding: 15px;
+}
+
+.nameh4 {
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #434a54;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.namep {
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #8e9298;
+}
+.containp {
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 149.3%;
+  color: #8e9298;
+  margin-top: 20px;
+}
+/* *************************************************************************************** */
+
+.section-9 .slick-dots {
+  position: absolute;
+  bottom: -50px;
+}
+.section-9 .slick-dots li {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 0 2px;
+}
+.section-9 .slick-dots li button {
+  font-size: 2px;
+  line-height: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  padding: 2px;
+}
+.section-9 .slick-dots li button {
+  font-size: 5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  padding: 1px;
+  color: #d5e0d5;
+  background: #d5e0d5;
+}
+.section-9 .slick-dots li button:hover {
+  color: #14a800;
+  background: #2bd42b;
+}
+/*ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+                         10-SECTION /গণমাধ্যমে কোডার্স ট্রাস্ট CSS
+   ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+.section10 .tenh3 {
+  font-family: "Hind Siliguri";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 133%;
+  color: #1d4354;
+  text-align: center;
+}
+.section10 .card .contain-card10 .image-area10 {
+  height: 150px;
+  width: 150px;
+  margin-right: 100px;
+}
+.section10 .card {
+  width: 400px;
+  height: 350px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.containp10 {
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 149.3%;
+  color: #8e9298;
+}
+.botom-img10 {
+  width: 400px;
+  height: 50px;
+  padding: 10px;
+}
+.img10 {
+  width: 80px;
+  height: 80px;
+}
+.input10 input {
+  width: 140px;
+  height: 30px;
+  border: none;
+}
+.section10 .card .contain-card10 {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  flex-direction: column;
+}
+.section10 .slick-dots {
+  position: absolute;
+  bottom: -50px;
+}
+.section10 .slick-dots li {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 0 2px;
+}
+.section10 .slick-dots li button {
+  font-size: 2px;
+  line-height: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  padding: 2px;
+}
+.section10 .slick-dots li button {
+  font-size: 5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  padding: 1px;
+  color: #d5e0d5;
+  background: #d5e0d5;
+}
+.section10 .slick-dots li button:hover {
+  color: #14a800;
+  background: #2bd42b;
+}
+/*ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+                         11-SECTION /আমাদের পার্টনার CSS
+   ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+.section11 .eleven11h3 {
+  font-family: "Hind Siliguri";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 133%;
+  color: #1d4354;
+  text-align: center;
+}
+.section11 .card {
+  width: 100px;
+  height: 200px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.section11 .card .contain-card11 {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  flex-direction: column;
+}
+/*ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+                         12-SECTION /nestop CSS
+   ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+.section12 {
+  background-color: #1d4354;
+}
+.item12 {
+  padding: 20px 60px;
+  list-style: none;
+}
+.link1 {
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fdfdfd;
+}
+.link2 a {
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 149.3%;
+  color: #fdfdfd;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.footerp {
+  margin-top: 3px;
+  font-family: "Baloo Da 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 149.3%;
+  color: #fdfdfd;
+}
+.footer-link .fa1 {
+  color: #1d4354;
+  background-color: #f2f7f2;
+  padding: 3px 2px 0px 3px;
+  margin: 2px;
+}
+.footer-link .you2 {
+  color: #f2f7f2;
+  font-size: 18px;
+  padding: 3px 2px 0px 3px;
+  margin: 3px;
+}
+.footer-link .twi3 {
+  color: #f2f7f2;
+  font-size: 18px;
+  padding: 3px 2px 0px 3px;
+  margin: 3px;
+}
+.footer-link .lin4 {
+  color: #f2f7f2;
+  font-size: 18px;
+  padding: 4px 3px 0px 4px;
+  margin: 3px;
+}
+/* 5555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555
+                                 TEMAS OF SERVICE SECTION
+                          55555555555555555555555555555555555555555555*/
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                         2-SECTION / overlay SECTION-CSS
+                  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+#showcash {
+  background-image: url("../img/degin-2/section-2/Group 6348.png");
+  min-height: 550px;
+}
+.overlay-img {
+  background-image: url("../img/degin-2/section-2/Group\ 6064.png");
+  background-size: cover;
+  height: 300px;
+  width: 600px;
+}
+/*********************************** 
+      HEADER DESING  responsive 
+***********************************/
+@media all and (max-width: 1200px) {
+  .nav-item.ms-4 {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+  .navbar-nav.ms-5 {
+    margin-top: 3px;
+    margin-left: 0 !important;
+  }
+  .select.px-3 {
+    margin-top: 1rem;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  .mainbtn {
+    display: block;
+    margin-top: 1rem;
+  }
+  .d-flex {
+    display: block !important;
+  }
+  .indersth3 {
+    margin-left: 40px;
+  }
+}
+/* HEADER DESING  end */
+
+/****************************
+      2.  কোডার্স ট্রাস্ট SECTION 
+****************************/
+
+/*******************************************
+    3.   আমাদের সম্পর্কে জেনে নাও CSS
+**********************************************/
+
+/*******************************************
+    7-SECTION / ইন্ডাস্ট্রি এক্সপার্টস
+**********************************************/
+/*******************************************
+    12-SECTION / NESTOP
+**********************************************/
+@media all and (max-width: 757px) {
+  .item12 {
+    padding: 0;
+    padding-top: 10px;
+  }
+}
